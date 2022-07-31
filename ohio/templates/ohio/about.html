@@ -1,0 +1,72 @@
+{% extends 'ohio/base.html'%}
+
+{% block title%}
+	About
+{% endblock%}
+
+{% block content%}
+	{% load static %}
+   <section id="about-img">
+    <img src="{% static 'ohio/images/about1.jpg'%}" alt="">
+   </section>
+   <section id="about-header" class="d-flex justify-content-center align-items-center">
+     <div>
+        <h1 class="text-center text-white  display-4 font-weight-bold">ABOUT US</h1>
+        <h2 class="text-center text-white  display-5 mt-3 font-weight-bold">WE BELIEVE IN GOOD FOOD, HAPPINESS, OUR CITY & DOING
+         BUSINESS IN A SUSTAINABLE MANNER</h2>
+     </div>
+   </section>
+   <section id="mission" class="d-flex flip-to-column">
+    <div>
+     <img src="{% static 'ohio/images/about2.jpg'%}" alt="">
+    </div>
+    <div class="d-flex justify-content-center align-items-center ">
+      <div>
+       <h3 class="text-center text-white font-weight-bold">OUR MISSION</h3>
+       <h2 class="text-center text-white  display-3 mt-3 font-weight-bold">To Provide an Unrivaled
+        Burrito-Eating Experience.</h2>
+      </div>
+    </div>
+   </section>
+   <section id="values">
+    <h3 class="text-center font-weight-bold">OUR VALUES</h3>
+    <div class="d-flex justify-content-between mt-5 flip-to-column">
+     <div>
+       <h2  class="font-weight-bold">WE BELIEVE IN GOOD FOOD.</h2>
+       <p class="mt-4">By using only the freshest ingredients and cooking all of our food from scratch each day, we are able to serve our
+       customers tasty food that is also healthy. This starts with fresh ingredients. From our tender beef shoulder to our all
+       white-meat chicken breast to a bone-in pork shoulder: all three are hand-rubbed with a unique blend of spices and oven
+       roasted to tenderness so that they can be hand-pulled before making their way onto the menu. All of our salsas are made
+       from scratch daily using fresh produce, as well as our guacamole, made with hand-mashed avocados. We believe that
+       preparing all of our food fresh each day provides our customers with a great experience.</p>
+     </div>
+      <div>
+       <h2 class="font-weight-bold">WE BELIEVE IN HAPPINESS.</h2>
+       <p class="mt-4">It is our primary goal that each and every customer walks away happy. We truly love working in the service industry. We
+       love our customers! And every interaction within our restaurant is an opportunity to smile and make somebody's day.</p>
+      </div>
+       <div>
+        <h2 class="font-weight-bold">WE BELIEVE IN DOING BUSINESS IN A SUSTAINABLE MANNER..</h2>
+        <p class="mt-4">We are committed to taking whatever steps we can to minimize our impact on the environment as well as enhance the local
+        economy. Each year we divert thousands of pounds of food waste from ending up in landfills and avoid tons of greenhouse
+        gas emissions. By partnering with local composting company, Rust Belt Riders, our food waste has been converted into a
+        rich compost material that is used to enhance the soils of local gardens, contributing to a more robust local food
+        system. We are firm believers in recycling, at work and at home. And we are dedicated to reinvesting in the local
+        economy. We are proud to partner with many other Cleveland companies for many of our business needs. It has been an
+        exciting journey growing with fellow small businesses, including Tortilleria La Bamba, Boutros Brothers Produce and The
+        Ohio City Farm, to name a few.</p>
+       </div>
+        <div>
+         <h2 class="font-weight-bold">WE BELIEVE IN OUR CITY.</h2>
+         <p class="mt-4">As most folks in our city already know by now, Cleveland is a wonderful place to live, work and play. There is an energy
+         here that cannot be found in every city. Clevelanders are tough. We are smart. We are adventurous. We are kind. And we
+         are lucky to be surrounded by some very energetic individuals and inspiring organizations. Over the last several years
+         alone we have seen countless positive changes take place in our city, and have gotten to know many of the inspiring
+         people behind this change. Ohio City Burrito is proud to have community partnerships with Esperanza, Inc. and The
+         Centers for Families & Children. We enjoy giving back to some of the many organizations igniting change throughout the
+         city, including Near West Recreation, Global Ambassadors Language Academy, St. Ignatius High School, The Animal
+         Protective League, Providence House and many more.</p>
+        </div>
+    </div>
+   </section>
+{% endblock%}

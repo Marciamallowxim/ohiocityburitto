@@ -1,0 +1,52 @@
+{% extends 'ohio/base.html'%}
+
+{% block title%}
+	Location
+{% endblock %}
+
+{% block content%}
+	{% load static %}
+	<section>
+	    	<img src="{% static 'ohio/images/location/location-img.jpg'%}" alt="">
+			</section>
+			<section  class="d-flex justify-content-center align-items-center header-black">
+				<h1 class="text-center text-white display-4 font-weight-bold">LOCATION</h1>
+			</section>
+			<section id="location-list-container">
+					<ul>
+						<li class="d-flex justify-content-between flip-to-column">
+							<div class="display-4 font-weight-bold">W. 25th</div>
+							<div class="expanded"></div>
+							<div>1844 W 25th St Ohio City Cleveland OH 44113 - (571)310-2482</div>
+							<div>Today's Hours (Friday)
+							10:30 AM - 10:00 PM</div>
+							<div><a href="https://www.google.com/maps/dir/?api=1&origin=1844%20W%2025th%20St%2C%20Cleveland%2C%20OH%2044113%2C%20USA&destination=1844%20W%2025th%20St%2C%20Cleveland%2C%2044113%2C%20United%20States&travelmode=driving" class="btn direction-link font-weight-bold">GET DIRECTIONS</a></div>
+						</li>
+						<li class="d-flex justify-content-between flip-to-column">
+							<div class="display-4 font-weight-bold">Progressive Field</div>
+							<div class="expanded"></div>
+							<div> 2401 Ontario Street Section 163 Cleveland OH 44113 - (571)310-2482</div>
+							<div>Opens 2 Hours Before Game Time</div>
+							<div><a href="https://www.google.com/maps/dir/?api=1&origin=1844%20W%2025th%20St%2C%20Cleveland%2C%20OH%2044113%2C%20USA&destination=526%20Superior%20Avenue%2C%20Cleveland%2C%2044114%2C%20United%20States&travelmode=driving" class="btn direction-link font-weight-bold">GET DIRECTIONS</a></div>
+						</li>
+						<li class="d-flex justify-content-between flip-to-column">
+							<div class="display-4 font-weight-bold">DOWNTOWN</div>
+							<div class="expanded"></div>
+							<div>
+						    526 Superior Avenue Cleveland OH 44114 - (571)310-2482
+						    </div>
+							<div>Today's Hours (Friday)
+								10:30 AM - 10:00 PM</div>
+							<div><a href="https://www.google.com/maps/dir/?api=1&origin=1844%20W%2025th%20St%2C%20Cleveland%2C%20OH%2044113%2C%20USA&destination=526%20Superior%20Avenue%2C%20Cleveland%2C%2044114%2C%20United%20States&travelmode=driving" class="btn direction-link font-weight-bold">GET DIRECTIONS</a></div>
+						</li>
+						<li class="d-flex justify-content-between flip-to-column flip-to-column">
+							<div class="display-4 font-weight-bold">LAKEWOOD</div>
+							<div class="expanded"></div>
+							<div>14412 Detroit Avenue Lakewood Ohio 44107 - (571)310-2482 </div>
+							<div>Today's Hours (Friday)
+								10:30 AM - 10:00 PM</div>
+							<div><a href="https://www.google.com/maps/dir/?api=1&origin=1844%20W%2025th%20St%2C%20Cleveland%2C%20OH%2044113%2C%20USA&destination=14412%20Detroit%20Avenue%2C%20Lakewood%2C%2044107%2C%20United%20States&travelmode=driving" class="btn direction-link font-weight-bold">GET DIRECTIONS</a></div>
+						</li>
+					</ul>
+	    </section>
+{% endblock%}

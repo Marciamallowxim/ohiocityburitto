@@ -1,0 +1,61 @@
+{% extends 'ohio/base.html'%}
+
+{% block title%}
+	Contact
+{% endblock%}
+
+{% block content%}
+	{% load static %}
+	<section class="d-flex justify-content-center align-items-center header-black">
+    <h1 class="text-center text-white display-4 font-weight-bold">CONTACT</h1>
+   </section>
+   <section id="contact-body" class="mt-5">
+     <h3 class="font-weight-bold pt-3 pb-4">
+       Have feedback about a recent visit? We would love to hear from you. Interested in our catering or delivery services?
+       Would you like us to host a fundraising event for your organization or apply for one of our current job openings?
+     </h3>
+     <div class="d-flex justify-content-between flip-to-column" id="contact-input-container">
+        <div>
+         <img src="{% static 'ohio/images/menu/contact-page.jpg'%}" alt="" >
+        </div>
+        <div>
+             <div class="d-flex flip-to-column">
+              <p class="mr-4">
+               First Name <br>
+               <input type="text"><br>
+              </p>
+              <p>
+               Last Name <br>
+               <input type="text"><br>
+              </p>
+             </div>
+              <p >
+               Email <br>
+               <input type="email"><br>
+              </p>
+              <p>
+                Phone
+                <br>
+               <input type="number"><br>
+              </p>
+
+              <p>
+               Subject
+               <br>
+               <select name="subject" >
+                <option >General Inquiry</option>
+                <option>Questions or Comments about Recent Vist</option>
+                <option>Online Review</option>
+                <option>Catering and Delivery orders</option>
+               </select>
+              </p>
+              <p>
+               Message
+               <br>
+               <textarea name="" id="" cols="25" rows="10"></textarea>
+              </p>
+              <button class="btn text-right">Submit</button>
+        </div>
+     </div>
+   </section>
+{% endblock%}

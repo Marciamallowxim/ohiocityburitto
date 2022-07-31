@@ -1,0 +1,20 @@
+{% extends 'ohio/base.html'%}
+
+{% block title%}
+	Home
+{% endblock%}
+
+{% block content%}
+	{% load static %}
+	<section id="hero">
+	    <img src="{% static 'ohio/images/home/hero.jpg'%}" alt="">
+	</section>
+	<section id="cards">
+
+		<div class="d-flex justify-content-between">
+			<a href="{% url 'menu' %}"><img src="{% static 'ohio/images/home/card1.png'%}" alt=""></a>
+			<a href="" class="ml-3"><img src="{% static 'ohio/images/home/card2.png'%}" alt=""></a>
+			<a href="" class="ml-3"><img src="{% static 'ohio/images/home/card3.png'%}" alt=""></a>
+		</div>
+	</section>
+{% endblock%}

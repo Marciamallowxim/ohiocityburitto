@@ -1,0 +1,22 @@
+{% extends 'ohio/base.html'%}
+
+{% block title%}
+	Menu
+{% endblock%}
+
+{% block content%}
+	{% load static %}
+	<section class="d-flex justify-content-center align-items-center header-black">
+    <h1 class="text-center text-white display-4 font-weight-bold">Menu</h1>
+   </section>
+   <section id="menu-container">
+    <div class="">
+
+    </div>
+   </section>
+{% endblock%}
+
+{% block script %}
+    {% load static %}
+    <script src="{% static 'ohio/js/menu.js'%}"></script>
+{% endblock %}
