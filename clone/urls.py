@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from ohio import views
-
+from  clone import settings
+from django.views.static import serve
+from django.conf.urls import url
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -26,4 +28,5 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('menu/', views.menu, name='menu'),
     path('cart/', views.cart, name='cart'),
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 ]
