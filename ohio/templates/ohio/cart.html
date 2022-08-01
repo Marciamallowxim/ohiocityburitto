@@ -56,21 +56,21 @@
 						<p class="m-0 font-weight-bold mb-1">Card number</p>
 						<div class="input-box p-2 d-flex align-items-center">
 
-							<input type="number"  maxlength="16" id="cardNumber" name="cardNumber" onKeyPress="if(this.value.length==16) return false;">
+							<input type="number"  maxlength="16" id="cardNumber" name="cardNumber" onkeyup="if(this.value.length==16) return false;">
 						</div>
 					</div>
 					<div class="d-flex  justify-content-between mb-3" id="split-input">
 						<div class="input-field  mr-3 ">
 							<p class="m-0 font-weight-bold mb-1">CVV</p>
 							<div class="input-box p-2 d-flex align-items-center">
-								<input type="number"  maxlength="3" id="cvv" name="cvv" onKeyPress="if(this.value.length==3) return false;">
+								<input type="number"  maxlength="3" id="cvv" name="cvv" onkeyup="if(this.value.length==3) return false;">
 							</div>
 						</div>
 						<div class="input-field">
 							<p class="m-0 font-weight-bold mb-1" >Expiry date</p>
 							<div class="input-box p-2 d-flex align-items-center">
 
-								<input type="text" onkeydown="formatString(event);" placeholder="MM/YY" onKeyPress="if(this.value.length==5) return false;" id="expiryDate" name="expiryDate">
+								<input type="text" onkeydown="formatString(event);" placeholder="MM/YY" id="expiryDate" name="expiryDate">
 							</div>
 						</div>
                     		</div>
