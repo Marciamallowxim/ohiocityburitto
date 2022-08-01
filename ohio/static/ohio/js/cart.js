@@ -40,6 +40,7 @@ function removeItemFromCart(foodId){
  let quantity = parseInt(cartCounterElement[0].innerHTML)
  cartCounterElement[0].innerHTML = quantity - 1;
  cartCounterElement[1].innerHTML = quantity - 1;
+ cartCounterElement[2].innerHTML = quantity - 1;
  getCartItems()
 }
 
@@ -75,12 +76,13 @@ e.preventDefault()
       showConfirmButton: false,
       timer: 1500,
 })
+const cardNameElement = document.getElementById("cardName")
 const phoneElement = document.getElementById("phone")
 const addressElement = document.getElementById("address")
 const cardElement = document.getElementById("cardNumber")
 const cvvElement = document.getElementById("cvv")
 const expiryDateElement = document.getElementById("expiryDate")
-if(phoneElement.value === "" || addressElement.value === "" || cardElement.value === "" || cvvElement.value === "" || expiryDateElement.value === ""   ){
+if(cardNameElement.value === "" || phoneElement.value === "" || addressElement.value === "" || cardElement.value === "" || cvvElement.value === "" || expiryDateElement.value === ""   ){
    Toast.fire({
       icon: 'error',
       title: 'fill all fields'

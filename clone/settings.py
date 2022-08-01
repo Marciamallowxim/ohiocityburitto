@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '$ix((-$l0i1v(f!0)o5#53*#9o(gi6#gw=_tn_5pd#6w)6$or9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', "ohiocityburitto.herokuapp.com"]
+ALLOWED_HOSTS = ['127.0.0.1', "ohiocityburitto.herokuapp.com", "localhost"]
 
 
 # Application definition

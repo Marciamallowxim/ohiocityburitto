@@ -101,6 +101,8 @@ function addToCart(foodId){
  localStorage.setItem("cart", JSON.stringify(cartlist))
    cartCounterElement[0].innerHTML = cartCounter + 1
   cartCounterElement[1].innerHTML = cartCounter + 1
+  cartCounterElement[2].innerHTML = cartCounter + 1
+
     Toast.fire({
       icon: 'success',
       title: 'added to cart'

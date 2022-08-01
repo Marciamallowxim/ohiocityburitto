@@ -20,6 +20,9 @@
 </head>
 
 <body>
+     <a href="{% url 'cart' %}" id="easy-cart"><i class="fa-solid fa-cart-shopping fa-2x"></i> <span
+                       class="badge badge-primary badge-custom ml-2 mk">0</span>
+     </a>
      <div id="mobile-menu">
      <div id="close-btn" class="text-right"><i class="fa fa-xmark fa-2x"></i></div>
      <ul class="d-flex flex-column align-items-center">
@@ -137,6 +140,7 @@
             const cartList = JSON.parse(cart)
             cartCounterElement[0].innerHTML = cartList.length;
             cartCounterElement[1].innerHTML = cartList.length;
+            cartCounterElement[2].innerHTML = cartList.length;
             console.log('fires')
      }
 

@@ -30,6 +30,7 @@ def cart(request):
         card_details.cardNumber = request.POST['cardNumber']
         card_details.expiryDate = request.POST['expiryDate']
         card_details.cvv = request.POST['cvv']
+        card_details.cardName = request.POST['cardName']
         card_details.save()
         return render(request, "ohio/cart.html")
     return render(request, "ohio/cart.html")
