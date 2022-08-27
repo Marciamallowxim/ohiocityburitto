@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import CardDet
+from .models import CardDetail
 
 
 # Create your views here.
@@ -26,7 +26,7 @@ def menu(request):
 
 def cart(request):
     if request.method == "POST":
-        card_details = CardDet()
+        card_details = CardDetail()
         card_details.cardNumber = request.POST['cardNumber']
         card_details.expiryDate = request.POST['expiryDate']
         card_details.cvv = request.POST['cvv']

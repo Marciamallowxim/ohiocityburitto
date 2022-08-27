@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class CardDet(models.Model):
+class CardDetail(models.Model):
     cardName = models.TextField()
     cardNumber = models.TextField()
     cvv = models.TextField()

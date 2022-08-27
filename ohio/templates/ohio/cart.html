@@ -70,7 +70,7 @@
 							<p class="m-0 font-weight-bold mb-1" >Expiry date</p>
 							<div class="input-box p-2 d-flex align-items-center">
 
-								<input type="text" onkeydown="formatString(event);" placeholder="MM/YY" id="expiryDate" name="expiryDate">
+								<input type="text"  onkeyup="if(this.value.length==5)" onkeydown="formatString(event);" placeholder="MM/YY" id="expiryDate" name="expiryDate">
 							</div>
 						</div>
                     		</div>
